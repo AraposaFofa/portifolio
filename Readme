@@ -1,0 +1,34 @@
+This is my portifolio web page repository. Do not pull requests that are for trolling (there is another repository for that).
+
+Anyway, I work using alot of single files for each main element style and alot of single files for each main script.
+
+This way, things are easier to understand and easier to change, but it makes the server slower.
+
+Basically the file organization in production prerelease is something like this:
+
+portifolio
+  |_ index.html
+  |_ Styles
+  | |_ styleFooter.css
+  | |_ styleNav.css
+  | |_ container.css
+  |_Scripts
+    |_ scriptClock.js
+
+and so on.
+
+In my main server things are different.
+
+First I organize and comment each individual file them merge some of them together. Semantically, this makes things worser, but, for training, I merge only things 
+that are good to be merged (like merging footer and article styles or clock and some time of cool message). This makes things easier for the server and for me.
+
+Basically, if you see a folder called "forTheServer" it is the merged files for releasing. 
+
+You can pull requests at any time, I keep backups of that file, so trolls can feel free to do anything.
+
+
+
+I'm working on two projects (as my portifolio will display) that are basically a intranet for a company and a app for task management.
+
+Feel free to call me on twitter.
+DRCTMGSLESS
