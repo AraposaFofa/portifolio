@@ -1,10 +1,10 @@
 /*! REMOVING MARGIN AND PADDING*/
-
 *{
     padding: 0;
     margin: 0;
     display: block;
 }
+
 /*! BECAUSE I SET DISPLAY BLOCK ON PREVIUS SELECTOR, I NEED TO DO THIS IN ORDER TO NOT MAKE HEAD ITEMS APPEAR*/
 head{
     display: none;
@@ -22,15 +22,21 @@ body{
     justify-content: center;
     align-items: center;
 
+    color: black;
     background-color: lightgray;
 }
+
 /** NAV BAR */
 header{
     background-color: darkgrey;
     width: 100%;
 }
+nav{
+    max-width: 90%;
+}
 nav ul{
     list-style-type: none;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -40,9 +46,7 @@ nav ul li{
     display: inline-block;
     padding: 1.5em;
 }
-nav{
-    width: 90%;
-}
+
 
 /** TITULO E ICONE*/
 
@@ -63,16 +67,32 @@ main{
 }
 
 /** FOOTER */
-
-footer{
-    width: 100%;
-    background-color: darkgray;
-}
-/*! POR ENQUANTO!*/
 footer p{
     display: inline-block;
+    padding: 1.5em;
 }
 footer p a{
     display: inline-block;
 }
 
+footer{
+    width: 100%;
+    background-color: darkgray;
+}
+.footer-content{
+    width: 90%;
+}
+/**DARK MODE*/
+.dark{
+    color: lightgray;
+    background-color: rgb(55, 55, 55) ;
+}
+.dark p, h1, h2, h3, li, a{
+    font-weight: 200;
+}
+.dark footer{
+    background-color: rgb(36, 36, 36);
+}
+.dark header{
+    background-color: rgb(36, 36, 36);
+}

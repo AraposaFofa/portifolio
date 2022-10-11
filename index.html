@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="styles/styles.css">
 
-    
 </head>
-<body>
+<body onload="toggleDarkMode()">
     <header>
         <nav>
             <ul>
@@ -38,30 +37,60 @@
             Just a nicy person doing some project here
         </section>
         <section>
+            <input type="checkbox" name="darkMode" id="darkToggle" class="darkToggle">
+            <label for="darkToggle">Dark mode button</label>
+
             1. Something here
             2. Something there
         </section>
         <section>
-            <h2>Some of my competences</h2>
-            1. C
-            2. Java
-            3. HTML
-            4. CSS
-            5. JS
-            6. Kotlin
-            7. UI/UX Designer
-            8. And so on
+            <h2>Some Of My Competences</h2>
+            <h3>C</h3>
+            <p>C, the core of most languages and most systems (and one of most popular language). I know a bit about C,
+                like pointers, casting, FILO and LIFO. I would consider myself on intermediate level, there is not a lot of
+                projects do to in C on my own. Anyway, I learnt that on school, made some cool programs to read files and etcetera.
+            </p>
+            <h3>Java</h3>
+            <p>
+                Java is a popular high level language among android developers, web developers and applet developers. Maybe as 
+                popular as C, Python, C++ or JavaScript. Anyway, I know a bit (not so much as some senior Java developer) of 
+                Java, I used to make some greenfoot games to play with my friends. Made a simple meeting agenda for my colleges
+                and some little things to make my school work easier (although it was simple projects).
+                Basically I would consider myself on intermediate level of the language (as in C). I know about OOP, polimorfism,
+                constructors, setters and getters, encapsulation, inheritance, some libraries of I/O, greenfoot and just that.
+            </p>
+            <h3>Web Development</h3>
+            <p>
+                Well, I made this web page myself using for frontend pure HTML and CSS without frameworks like tailwind or (futurally)
+                bootstrap and (not now) JavaScript, MongoDB and a bit of PHP. As mainly a web developer, I know about wordpress, servers
+                and things as such that people communly use. I would consider myself on advanced level of HTMl and intermediate level
+                of CSS and JavaScript (As I write this, I did not learn DOM). In databases I would consider myself on intermediate level,
+                I just use PHPMYADMIN or MongoDB GUI to manage my databases.  
+            </p>
+            <h3>Trying To Develop</h3>
+                <p>
+                    I'm learning Kotlin, more about Java and android studio for making a app for my company (a sort of form). 
+                    I learned alot of for now, like the R library, XML and the studio interface.
+                    For now, it is just that, I think
+                </p>
         </section>
         <section>
-            Download!
+            <h2>Certificates</h2>
+            <p>You can download and see some of them here!</p>
         </section>
     </main>
+
+
     <footer>
-        <p>Copyright <a href="https://github.com/AraposaFofa">AraposaFofa</a> 2022</p>
-        <p>twitter</p>
-        <p>github</p>
-        <p>facebook</p>
-        <p>telegram</p>
+        <div class="footer-content">
+            <p>Copyright <a href="https://github.com/AraposaFofa">AraposaFofa</a> 2022</p>
+            <p>twitter</p>
+            <p>github</p>
+            <p>facebook</p>
+            <p>telegram</p>
+            <p>email</p>
+        </div>
     </footer>
 </body>
+<script src="scripts/dark-mode.js"></script>
 </html>
