@@ -9,41 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
-<body onload="toggleDarkMode()">
-    <header>
-        <nav>
-            <ul>
+<body class="flex-column-center-center">
+    <header class="flex-row">
+        <nav class="flex-row">
+            <div class="display-inline-block">
+                <p class="display-inline-block my-title">
+                    Portfolio
+                </p>
+            </div>
+            <ul class="display-inline-block">
                 <li>Start</li>
                 <li>About</li>
                 <li>Projects</li>
                 <li>Certificates</li>
                 <li>CV</li>
                 <li>Contact</li>
+                <li>
+                    <input type="checkbox" name="darkMode" id="darkToggle">
+                    <label class="display-inline-block light-mode-button" for="darkToggle">Light mode button</label>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Portfolio</h1>
+        <section class="profile-box">
+            <img src="images/H81anMf8_400x400.jpg" alt="GitHub Photo">
+            <h1>drctmsgless</h1>
+            <div>
+                <p>Welcome to my portfolio!</p>
+                <p>I know a bit about coding, data science, moral philosophy, eletricity and chocolate!</p>
+            </div>
         </section>
-        <section>
-            <img src="images/H81anMf8_400x400.jpg" alt="image">
-            <p>drctmsgless</p>
-        </section>
-        <section>
-            Just a nicy person doing some project here
-        </section>
-        <section>
-            <input type="checkbox" name="darkMode" id="darkToggle" class="darkToggle">
-            <label for="darkToggle">Dark mode button</label>
-
-            1. Something here
-            2. Something there
-        </section>
-        <section>
+        <section class="about-user">
             <h2>Some Of My Competences</h2>
             <h3>C</h3>
             <p>C, the core of most languages and most systems (and one of most popular language). I know a bit about C,
@@ -74,21 +75,27 @@
                     For now, it is just that, I think
                 </p>
         </section>
-        <section>
+        <section class="user-certificates">
             <h2>Certificates</h2>
             <p>You can download and see some of them here!</p>
         </section>
     </main>
 
 
-    <footer>
+    <footer class="flex-column-center-center">
         <div class="footer-content">
-            <p>Copyright <a href="https://github.com/AraposaFofa">AraposaFofa</a> 2022</p>
-            <p>twitter</p>
+            <p><link href='https://css.gg/twitter.css' rel='stylesheet'> twitter</p>
             <p>github</p>
             <p>facebook</p>
             <p>telegram</p>
             <p>email</p>
+        </div>
+        <div class="footer-copyright">
+            <p class="display-inline-block">
+                Copyright
+                <a class="display-inline-block" href="https://github.com/AraposaFofa">AraposaFofa</a> 
+                2022
+            </p>
         </div>
     </footer>
 </body>

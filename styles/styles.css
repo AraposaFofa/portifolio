@@ -1,87 +1,115 @@
 /*! REMOVING MARGIN AND PADDING*/
+/** GENERAL CONFIGURATIONS*/
 *{
     padding: 0;
     margin: 0;
-    display: block;
 }
-
-/*! BECAUSE I SET DISPLAY BLOCK ON PREVIUS SELECTOR, I NEED TO DO THIS IN ORDER TO NOT MAKE HEAD ITEMS APPEAR*/
-head{
-    display: none;
-}
-
-/*! MAKING BODY THE FLEXBOX CONFIGURATOR*/
-/*? THIS MAKES THINGS EASIER TO SEE*/
-/*? I COULD JUST MAKE ONE DIV OR ONE MAIN SECTION FOR EVERYTHING*/
-
 body{
     font-family: 'Outfit';
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     color: black;
     background-color: lightgray;
 }
-
+::selection{
+    color: blue;
+}
 /** NAV BAR */
 header{
     background-color: darkgrey;
-    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 nav{
-    max-width: 90%;
-}
-nav ul{
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: space-between ;
+    width: 80vw;
 }
 nav ul li{
     display: inline-block;
-    padding: 1.5em;
+    padding: 1.2em;
+    font-size: 1em;
+}
+nav div{
+    padding-left: 10vw;
+}
+.my-title{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-size: 2.5em;
+}
+/**ICON AND TITLE*/
+.profile-box{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows:50% 50%;
+    align-items: center;
+    column-gap: 3em;
+    padding-bottom: 3vh;
 }
 
-
-/** TITULO E ICONE*/
-
-main h1{
-    display: inline-block;
-}
-main section img{
+section.profile-box img{
     max-width: 10em;
+    grid-row-start: 1;
+    grid-row-end: span 2;
     display: inline-block;
 }
-
+section.profile-box div{
+    grid-area: 2/2;
+}
+h1{
+    display: inline-block;
+    font-family: 'Montserrat';
+}
+.space-sec{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
 /** MAIN SECTION (CONTENT)*/
-
 main{
     /*MAKING THINGS LOOK PRETTY*/
-    width: 100%;
+    width: 100vw;
     max-width: 60%;
+    padding: 3vw 0;
 }
-
+main p{
+    text-align: justify;
+}
 /** FOOTER */
-footer p{
-    display: inline-block;
-    padding: 1.5em;
-}
-footer p a{
-    display: inline-block;
-}
-
 footer{
-    width: 100%;
+    width: 100vw;
+    
     background-color: darkgray;
 }
-.footer-content{
-    width: 90%;
+footer p{
+    padding: 0.7em;
+    display: inline-block;
 }
+footer a{
+    text-decoration: none;
+    color: purple; 
+}
+
+
+
+/*! UTILITY CALSSES*/
+.display-inline-block{
+    display: inline-block;
+}
+.flex-row{ /*! THIS IS ON NAV AND HEADER*/
+    display: flex;
+    flex-direction: row
+}
+.flex-column-center-center{ /*! THIS IS ON BODY AND FOOTER*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /**DARK MODE*/
 .dark{
     color: lightgray;
@@ -96,3 +124,33 @@ footer{
 .dark header{
     background-color: rgb(36, 36, 36);
 }
+.dark .light-mode-button{
+    border-color: lightgray;
+}
+.dark .light-mode-button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+}
+.dark ::selection{
+    color: rgb(181, 50, 181)
+}
+/** DARK MODE BUTTON IS ON NAVBAR*/
+.light-mode-button{ 
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 0.7em;
+    cursor: pointer;
+}
+.light-mode-button:hover{
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+    color: lightgray;
+}
+#darkToggle{
+    display: none;
+}
+/** MEDIA QUERIES*/
+/**? DEPOIS FAZER A RESPONSIVIDADE**/
