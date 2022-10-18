@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-icons.css">
 
 </head>
 <body class="flex-column-center-center">
@@ -30,15 +31,15 @@
                 <li>Contact</li>
                 <li>
                     <input type="checkbox" name="darkMode" id="darkToggle">
-                    <label class="display-inline-block light-mode-button" for="darkToggle">Light mode button</label>
+                    <label class="display-inline-block light-mode-button" for="darkToggle">Color Mode Button</label>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="profile-box">
-            <img src="images/H81anMf8_400x400.jpg" alt="GitHub Photo">
-            <h1>drctmsgless</h1>
+            <img class="display-inline-block" src="images/H81anMf8_400x400.jpg" alt="GitHub Photo">
+            <h1 class="display-inline-block">drctmsgless</h1>
             <div>
                 <p>Welcome to my portfolio!</p>
                 <p>I know a bit about coding, data science, moral philosophy, eletricity and chocolate!</p>
@@ -68,6 +69,12 @@
                 of CSS and JavaScript (As I write this, I did not learn DOM). In databases I would consider myself on intermediate level,
                 I just use PHPMYADMIN or MongoDB GUI to manage my databases.  
             </p>
+            <h3>Moral Philosophy</h3>
+            <p>
+                Yes, it's strange for a developer to know about philosophy, I think. But I know for sure that you won't be dissapointed. 
+                I know about leading moral philosophers about alot of topics, such applied ethics, normative ethics and metaethics. I even 
+                know about political philosophy as well as epistemology! If you want a philosophy teacher, I can teach you for a penny!
+            </p>
             <h3>Trying To Develop</h3>
                 <p>
                     I'm learning Kotlin, more about Java and android studio for making a app for my company (a sort of form). 
@@ -83,20 +90,20 @@
 
 
     <footer class="flex-column-center-center">
-        <div class="footer-content">
-            <p><link href='https://css.gg/twitter.css' rel='stylesheet'> twitter</p>
-            <p>github</p>
-            <p>facebook</p>
-            <p>telegram</p>
-            <p>email</p>
-        </div>
-        <div class="footer-copyright">
+        <section class="footer-content">
+            <a href="mailto:yuna.chan@senargia.com.br"><i class="gg-mail">!</i></a>
+            <a href="https://twitter.com/drctmsgless" target="_blank" rel="noopener noreferrer"><i class="gg-twitter"></i></a>
+            <a href=""><i class="gg-facebook"></i></a>
+            <a href="">Github</a>
+            <a href="">Telegram</a>
+        </section>
+        <section class="footer-copyright">
             <p class="display-inline-block">
                 Copyright
                 <a class="display-inline-block" href="https://github.com/AraposaFofa">AraposaFofa</a> 
                 2022
             </p>
-        </div>
+        </section>
     </footer>
 </body>
 <script src="scripts/dark-mode.js"></script>
